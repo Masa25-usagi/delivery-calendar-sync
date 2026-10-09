@@ -1,0 +1,31 @@
+{
+  "name": "delivery-calendar-sync",
+  "version": "0.1.0",
+  "description": "Parse delivery notification emails from Yamato, Sagawa, Japan Post, Apple Store, and Amazon into Google Calendar events and morning alerts",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "delivery-sync": "src/cli.ts"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit"
+  },
+  "keywords": [
+    "delivery",
+    "calendar",
+    "google-calendar",
+    "ical",
+    "yamato",
+    "sagawa",
+    "japanpost",
+    "apple"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "private": true
+}
